@@ -1,8 +1,8 @@
 import random
 
 
-def generate_random_ints(n):
+def generate_random_ints(start, end, count):
     '''
     returns array with n number of unique random integers
     '''
-    return [random.randrange(100000, 999999) for _ in range(n)]
+    return random.sample(range(start, end), count)
